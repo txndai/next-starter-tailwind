@@ -1,5 +1,7 @@
-import Header from "./header";
+import PropTypes from "prop-types";
+
 import Footer from "./footer";
+import Header from "./header";
 
 function Layout(props) {
   return (
@@ -12,5 +14,9 @@ function Layout(props) {
     </div>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node,
+};
 
 export default Layout;
